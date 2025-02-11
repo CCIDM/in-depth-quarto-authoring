@@ -226,4 +226,4 @@ Then reference `custom.scss` in your Quarto YAML to apply these styles to your p
 
 # Thank You
 
-**Thank you for joining this Advanced Quarto Workshop!**\
+**Thank you for joining this Quarto Workshop!**\
