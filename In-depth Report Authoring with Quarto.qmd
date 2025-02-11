@@ -1,0 +1,229 @@
+---
+title: "In-depth Interactive Report Authoring with Quarto"
+date: "02-18-2025"
+date-format: "M/D/YYYY"
+format:
+  revealjs:
+    logo: "logos/ccidm-cpp logo.png"
+    theme: theme.scss
+    slide-number: true
+    toc: true
+    #chalkboard: true #cannot use with self-contained
+    self-contained: true
+    width: 1280
+    height: 720
+---
+
+# Greetings and Introduction of Presenters
+
+::::{.incremental}
+-   Moderator: Dr. Jae Jung
+
+-   Presenters
+    -   Dr. Jae Jung, Professor of Marketing
+    -   Ceren Ural, MSDM Student 
+    -   Jarrod Griffin, MSDM Student
+:::
+
+
+# Learning Outcomes:
+
+After taking this workshop, participants should be able to:
+
+:::{.small-medium-text .incremental}
+1.  Covert students’ existing plain class project report to dynamic HTML report using Quarto. 
+2.  Format documents in Quarto with common formatting tasks (e.g., toc, numbering sections, tabsets, citation management, etc.). 
+3.  Control the behavior of code blocks for common reports (e.g., hiding/folding code blocks, handling code overflow, handling error, etc.). 
+4.  Be familiar with common themes to apply for HTML documents. 
+5.  Style your HTML document with SCSS. 
+:::
+
+# Converting plain class project report to dynamic HTLM report with Ceren
+
+## Agenda
+
+::: incremental
+-   Get acquainted with the Visual Editor
+-   Modify draft using Visual Editor tools
+-   Modify YAML to customize HTML document
+-   Modify YAML to customize code chunks
+-   Add interactive features
+-   Add code chunks
+:::
+
+# Styling a basic HTML Report with themes and SCSS with Jarrod
+
+## Using Aside Blocks
+
+Quarto supports “aside” blocks which can be used to provide **additional context** or **tips** without distracting from the main content:
+
+``` markdown
+:::{.aside}
+*Here’s some extra insight or notes.*
+:::
+```
+
+::: aside
+This is an actual aside block. It won’t disrupt your main slide text!
+:::
+
+------------------------------------------------------------------------
+
+## Creating Styled Divs and Spans
+
+We can **customize layout** by creating styled `div`s or `span`s.
+
+``` markdown
+:::{.my-custom-div}
+This entire block is wrapped in a custom `div` with a CSS class of `my-custom-div`.
+:::
+```
+
+For inline styling, you can use a `span` with a class or style attributes:
+
+``` html
+<span class="highlighted">Important text here</span>
+```
+
+::: {.my-custom-div style="border: 1px solid #ccc; padding: 10px;"}
+Inside a styled div, we can customize backgrounds, borders, and more.
+:::
+
+
+# HTML Basics
+
+
+## Writing LaTeX Equations
+
+You can **embed LaTeX equations** in your Quarto slides using standard LaTeX syntax. For example:
+
+$begin:math:display$ x = \\frac{-b \\pm \\sqrt{b\^2 - 4ac}}{2a} $end:math:display$
+
+Inline equations are written similarly: $begin:math:display$ E = mc\^2 $end:math:display$
+
+Just place the equations anywhere in your Markdown and Quarto will render them in Reveal.js.
+
+
+## Making Presentations Self-Contained
+
+By setting `self-contained: true` in your YAML front matter (as done in this file), Quarto **bundles all external resources** (images, CSS, etc.) into a single file. This makes it easy to share or host your presentation without worrying about missing files.
+
+``` yaml
+---
+title: "My Presentation"
+format:
+  revealjs:
+    self-contained: true
+---
+```
+
+
+# HTML Code Blocks
+
+------------------------------------------------------------------------
+
+## Using Code Annotations
+
+Quarto code blocks can include **annotations** to explain specific lines or sections of code:
+
+```{r}
+#| label: data-plot
+#| annotation: "This code block creates a simple plot in R."
+
+plot(1:10, main = "Example Plot")
+```
+
+The `#| annotation:` field allows you to provide short descriptions or notes about the code block’s purpose.
+
+
+## Implementing Executable Code Blocks
+
+Include a language engine (e.g., `python`, `r`) to make your code **executable** within the presentation:
+
+```{r}
+print("Hello from Python in a Quarto Reveal.js presentation!")
+```
+
+When rendered, you can run this chunk if interactive execution is configured.
+
+
+## Enabling the Copy Button for Code Snippets
+
+In your YAML, set:
+
+``` yaml
+format:
+  revealjs:
+    code-tools: ["copy"]
+```
+
+This enables a **copy button** on each code block, allowing you (and your audience) to quickly copy code snippets.
+
+
+# HTML Theming
+
+
+## Exploring Built-in Theme Options
+
+Reveal.js supports **built-in themes** such as:
+
+-   `default`
+-   `beige`
+-   `solarized`
+-   `night`
+-   `serif`
+-   `simple`
+-   and more...
+
+Simply specify a theme name in your YAML:
+
+``` yaml
+format:
+  revealjs:
+    theme: "night"
+```
+
+
+## Defining and Applying Custom Themes
+
+You can define a custom SCSS or CSS theme and reference it in your YAML. For example:
+
+``` yaml
+format:
+  revealjs:
+    theme: 
+      - "default"
+      - "custom.scss"
+```
+
+Where `custom.scss` might contain your **custom styles** to override the default theme.
+
+
+## Using SASS Variables and CSS for Further Styling
+
+In your custom `.scss` file, you can define SASS variables to make theming more maintainable. For instance:
+
+``` scss
+// custom.scss
+$bg-color: #2a2a2a;
+$font-color: #ffffff;
+
+.reveal {
+  background: $bg-color;
+  color: $font-color;
+}
+
+.my-custom-div {
+  border: 2px solid $font-color;
+  padding: 10px;
+  border-radius: 4px;
+}
+```
+
+Then reference `custom.scss` in your Quarto YAML to apply these styles to your presentation.
+
+
+
+# Thank You
+
+**Thank you for joining this Advanced Quarto Workshop!**\
