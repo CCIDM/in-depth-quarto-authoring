@@ -25,7 +25,21 @@ format:
     -   Jarrod Griffin, MSDM Student
 :::
 
+## Overall Agenda
 
+::: {.incremental}
+1.	Greetings and Introduction to Presenters – 4 min (Moderator)
+    + Speaker 1
+    + Speaker 2
+        + Speaker 3
+2.	Expected Learning outcomes & Agenda (Moderator) - 1 min
+3.	Overview of Advanced Features of HTML document in Quarto (JM) – 1 min
+4.	Features useful for professors (JM) – 14 min
+5.	Converting plain class project report to dynamic HTLM report (Ceren) – 25 min
+6.	Styling a basic HTML Report with themes and SCSS (Jarrod) – 25 min
+7.	Q&A – 5 min
+8.	End
+:::
 
 # Learning Outcomes:
 
