@@ -137,16 +137,6 @@ plot(1:10, main = "Example Plot")
 The `#| annotation:` field allows you to provide short descriptions or notes about the code block’s purpose.
 
 
-## Implementing Executable Code Blocks
-
-Include a language engine (e.g., `python`, `r`) to make your code **executable** within the presentation:
-
-```{r}
-print("Hello from Python in a Quarto Reveal.js presentation!")
-```
-
-When rendered, you can run this chunk if interactive execution is configured.
-
 
 ## Enabling the Copy Button for Code Snippets
 
@@ -155,7 +145,7 @@ In your YAML, set:
 ``` yaml
 format:
   revealjs:
-    code-tools: ["copy"]
+    code-copy: true
 ```
 
 This enables a **copy button** on each code block, allowing you (and your audience) to quickly copy code snippets.
