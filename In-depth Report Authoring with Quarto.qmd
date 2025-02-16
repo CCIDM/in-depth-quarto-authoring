@@ -1,5 +1,7 @@
 ---
 title: "In-depth Interactive Report Authoring with Quarto"
+author: "Center for Customer Insights and Digital Marketing"
+institute: "CAl Poly Pomona"
 date: "02-18-2025"
 date-format: "M/D/YYYY"
 format:
@@ -7,41 +9,45 @@ format:
     logo: "logos/ccidm-cpp logo.png"
     theme: theme.scss
     slide-number: true
-    toc: true
+    #toc: true
+    #toc-depth: 1
     #chalkboard: true #cannot use with self-contained
     self-contained: true
     width: 1280
     height: 720
+execute: 
+  freeze: auto
 ---
 
 # Greetings and Introduction of Presenters
 
-::::{.incremental}
--   Moderator: Dr. Jae Jung
-
--   Presenters
-    -   Dr. Jae Jung, Professor of Marketing
-    -   Ceren Ural, MSDM Student 
-    -   Jarrod Griffin, MSDM Student
-:::
+-   Jae Jung, Ph.D., Professor of Marketing
+-   Ceren Ural, MSDM Student 
+-   Jarrod Griffin, MSDM Student
 
 ## Overall Agenda
 
 ::: {.incremental}
-1.	Greetings and Introduction to Presenters – 4 min (Moderator)
-    + Speaker 1
-    + Speaker 2
-        + Speaker 3
-2.	Expected Learning outcomes & Agenda (Moderator) - 1 min
-3.	Overview of Advanced Features of HTML document in Quarto (JM) – 1 min
-4.	Features useful for professors (JM) – 14 min
-5.	Converting plain class project report to dynamic HTLM report (Ceren) – 25 min
-6.	Styling a basic HTML Report with themes and SCSS (Jarrod) – 25 min
-7.	Q&A – 5 min
-8.	End
+1.	Expected Learning outcomes
+2.	Overview of Advanced Features of HTML document in Quarto
+3.	Features useful for professors (14 min)
+4.	Converting plain class project report to dynamic HTLM report (25 min)
+5.	Styling a basic HTML Report with themes and SCSS (25 min)
+6.	Q&A (5 min)
 :::
 
-# Learning Outcomes:
+::: notes
+1.	Expected Learning outcomes & Agenda (Moderator) - 1 min
+2.	Overview of Advanced Features of HTML document in Quarto (JM) – 1 min
+3.	Features useful for professors (JM) – 14 min
+4.	Converting plain class project report to dynamic HTLM report (Ceren) – 25 min
+5.	Styling a basic HTML Report with themes and SCSS (Jarrod) – 25 min
+6.	Q&A – 5 min
+7.	End
+
+:::
+
+# 1. Expected Learning outcomes:
 
 After taking this workshop, participants should be able to:
 
@@ -53,11 +59,15 @@ After taking this workshop, participants should be able to:
 5.  Style your HTML document with SCSS. 
 :::
 
-# Converting plain class project report to dynamic HTLM report with Ceren
+# 2. Overview of Advanced Features of HTML document in Quarto
 
-## Agenda
+# 3. Features useful for professors 
 
-::: incremental
+# 4. Converting plain class project report to dynamic HTLM report with Ceren
+
+Topics to Cover:
+
+::: {.small-text}
 -   Get acquainted with the Visual Editor
 -   Modify draft using Visual Editor tools
 -   Modify YAML to customize HTML document
@@ -66,7 +76,12 @@ After taking this workshop, participants should be able to:
 -   Add code chunks
 :::
 
-# Styling a basic HTML Report with themes and SCSS with Jarrod
+. . .
+
+Demonstration to be provided separately
+
+
+# 5. Styling a Standard HTML Report with themes and SCSS with Jarrod
 
 ## Using Aside Blocks
 
@@ -105,9 +120,6 @@ Inside a styled div, we can customize backgrounds, borders, and more.
 :::
 
 
-# HTML Basics
-
-
 ## Writing LaTeX Equations
 
 You can **embed LaTeX equations** in your Quarto slides using standard LaTeX syntax. For example:
@@ -132,10 +144,6 @@ format:
 ---
 ```
 
-
-# HTML Code Blocks
-
-------------------------------------------------------------------------
 
 ## Using Code Annotations
 
@@ -163,9 +171,6 @@ format:
 ```
 
 This enables a **copy button** on each code block, allowing you (and your audience) to quickly copy code snippets.
-
-
-# HTML Theming
 
 
 ## Exploring Built-in Theme Options
@@ -229,6 +234,6 @@ Then reference `custom.scss` in your Quarto YAML to apply these styles to your p
 
 
 
-# Thank You
+# 6. Q&A 
 
 **Thank you for joining this Quarto Workshop!**\
