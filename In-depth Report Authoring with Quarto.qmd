@@ -61,25 +61,35 @@ After taking this workshop, participants should be able to:
 
 # 2. Overview of Advanced Features of HTML document in Quarto
 
+- [In-depth Literate Program with Quarto](https://jmjung.quarto.pub/m02-advanced-literate-programming/)
+
 # 3. Features useful for professors 
 
-# 4. Converting plain class project report to dynamic HTLM report with Ceren
+## Topics to cover:
 
-Topics to Cover:
+- Citations
+- Footnote
+- References
+- Figure
+- Cross referencing
+- Inline coding
+- Error: true/false
 
-::: {.small-text}
+[Demonstration to be provided separately]{style="color:blue; font-weight:bold;"}
+
+
+# 4. Converting plain class project report to dynamic HTLM report with Ceren 
+
+## Topics to Cover:
+
 -   Get acquainted with the Visual Editor
 -   Modify draft using Visual Editor tools
 -   Modify YAML to customize HTML document
 -   Modify YAML to customize code chunks
 -   Add interactive features
 -   Add code chunks
-:::
 
-. . .
-
-Demonstration to be provided separately
-
+[Demonstration to be provided separately]{style="color:blue; font-weight:bold;"}
 
 # 5. Styling a Standard HTML Report with themes and SCSS with Jarrod
 
