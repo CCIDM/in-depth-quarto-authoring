@@ -1,0 +1,75 @@
+---
+title: "Academic Writing Features"
+subtitle: "Part of In-Depth Quarto Authoring Workshop"
+author: "Jae Jung"
+format: 
+  html:
+    toc: true
+    toc-location: right-body
+    number-sections: true
+    embed-resources: true
+editor: visual
+bibliography: references.bib
+execute: 
+  warning: false
+  freeze: auto
+  error: true
+---
+
+# Features useful for professors
+
+## Topics to cover:
+
+1.  Citations
+2.  Footnote
+3.  References
+4.  Figure
+5.  Cross-referencing
+6.  Inline coding
+7.  Error: true/false
+
+# Sample Quarto Document
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>. Quarto also allows authors to do literate programming [@erickson2024].[^1]
+
+[^1]: This is just one of many articles about reproducible report.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this[^2]:
+
+[^2]: To add a code chunk, press control and "/" simultaneously.
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+# Data Setup
+
+```{r}
+#| label: tbl-mpg
+#| tbl-cap: Data Showing mpg related data for automobilies
+#| tbl-cap-location: top
+library(tidyverse)
+library(DT)
+xmpg |> 
+  #head() |> 
+  datatable()
+```
+
+::: callout-tip
+## Summary of Data
+
+@tbl-mpg shows the interesting data for car-markers. There are `r nrow(mpg)` cars in the data.
+:::
