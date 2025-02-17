@@ -73,3 +73,21 @@ xmpg |>
 
 @tbl-mpg shows the interesting data for car-markers. There are `r nrow(mpg)` cars in the data.
 :::
+
+::: {layout-ncol="2"}
+![Graduates cellebrating](images/24ag-grad_91.jpg){#fig-graduation fig-alt="People celebrating around the graduate"}
+
+![Belonging](images/jayvion-campbell-and-friends.jpg){#fig-belonging fig-alt="a group of students standing"}
+:::
+
+# Pictures
+
+::::: columns
+::: {.column width="50%"}
+Some college degrees hang on a wall. Get on that also paves the way to a brighter financial future (@fig-graduation).
+:::
+
+::: {.column width="50%"}
+Be inspired every day, inside and outside the classroom, by a diverse, supportive and creative community that will help you discover who you are and what you're capable of (@fig-belonging).
+:::
+:::::

@@ -1,7 +1,7 @@
 ---
 title: "In-depth Interactive Report Authoring with Quarto"
 author: "Center for Customer Insights and Digital Marketing"
-institute: "CAl Poly Pomona"
+institute: "Cal Poly Pomona"
 date: "02-18-2025"
 date-format: "M/D/YYYY"
 format:
@@ -22,63 +22,61 @@ execute:
 # Greetings and Introduction of Presenters
 
 -   Jae Jung, Ph.D., Professor of Marketing
--   Ceren Ural, MSDM Student 
+-   Ceren Unal, MSDM Student
 -   Jarrod Griffin, MSDM Student
 
 ## Overall Agenda
 
-::: {.incremental}
-1.	Expected Learning outcomes
-2.	Overview of Advanced Features of HTML document in Quarto
-3.	Features useful for professors (14 min)
-4.	Converting plain class project report to dynamic HTLM report (25 min)
-5.	Styling a basic HTML Report with themes and SCSS (25 min)
-6.	Q&A (5 min)
+::: incremental
+1.  Expected Learning outcomes
+2.  Overview of Advanced Features of HTML document in Quarto
+3.  Features useful for professors (14 min)
+4.  Converting plain class project report to dynamic HTLM report (25 min)
+5.  Styling a basic HTML Report with themes and SCSS (25 min)
+6.  Q&A (5 min)
 :::
 
 ::: notes
-1.	Expected Learning outcomes & Agenda (Moderator) - 1 min
-2.	Overview of Advanced Features of HTML document in Quarto (JM) – 1 min
-3.	Features useful for professors (JM) – 14 min
-4.	Converting plain class project report to dynamic HTLM report (Ceren) – 25 min
-5.	Styling a basic HTML Report with themes and SCSS (Jarrod) – 25 min
-6.	Q&A – 5 min
-7.	End
-
+1.  Expected Learning outcomes & Agenda (Moderator) - 1 min
+2.  Overview of Advanced Features of HTML document in Quarto (JM) – 1 min
+3.  Features useful for professors (JM) – 14 min
+4.  Converting plain class project report to dynamic HTLM report (Ceren) – 25 min
+5.  Styling a standard HTML Report with themes and SCSS (Jarrod) – 25 min
+6.  Q&A – 5 min
+7.  End
 :::
 
 # 1. Expected Learning outcomes:
 
 After taking this workshop, participants should be able to:
 
-:::{.small-medium-text .incremental}
-1.  Covert students’ existing plain class project report to dynamic HTML report using Quarto. 
-2.  Format documents in Quarto with common formatting tasks (e.g., toc, numbering sections, tabsets, citation management, etc.). 
-3.  Control the behavior of code blocks for common reports (e.g., hiding/folding code blocks, handling code overflow, handling error, etc.). 
-4.  Be familiar with common themes to apply for HTML documents. 
-5.  Style your HTML document with SCSS. 
+::: {.small-medium-text .incremental}
+1.  Convert students’ existing plain class project reports to dynamic HTML reports using Quarto.
+2.  Format documents in Quarto with common formatting tasks (e.g., toc-location, cross-referencing, tabsets, citation management, etc.).
+3.  Control the behavior of code blocks for common reports (e.g., hiding/folding code blocks, handling code overflow, handling errors, etc.).
+4.  Be familiar with common themes to apply for HTML documents.
+5.  Style your HTML document with SCSS.
 :::
 
 # 2. Overview of Advanced Features of HTML document in Quarto
 
-- [In-depth Literate Program with Quarto](https://jmjung.quarto.pub/m02-advanced-literate-programming/)
+-   [In-depth Literate Program with Quarto](https://jmjung.quarto.pub/m02-advanced-literate-programming/)
 
-# 3. Features useful for professors 
+# 3. Features useful for professors with `Jae`
 
 ## Topics to cover:
 
-- Citations
-- Footnote
-- References
-- Figure
-- Cross referencing
-- Inline coding
-- Error: true/false
+-   Citations
+-   Footnote
+-   References
+-   Cross-referencing
+-   Inline coding
+-   Error: true/false
+-   Figure (time-permitted)
 
 [Demonstration to be provided separately]{style="color:blue; font-weight:bold;"}
 
-
-# 4. Converting plain class project report to dynamic HTLM report with Ceren 
+# 4. Converting plain class project report to dynamic HTLM report with `Ceren`
 
 ## Topics to Cover:
 
@@ -87,11 +85,10 @@ After taking this workshop, participants should be able to:
 -   Modify YAML to customize HTML document
 -   Modify YAML to customize code chunks
 -   Add interactive features
--   Add code chunks
 
 [Demonstration to be provided separately]{style="color:blue; font-weight:bold;"}
 
-# 5. Styling a Standard HTML Report with themes and SCSS with Jarrod
+# 5. Styling a Standard HTML Report with themes and SCSS with `Jarrod`
 
 ## Using Aside Blocks
 
@@ -129,7 +126,6 @@ For inline styling, you can use a `span` with a class or style attributes:
 Inside a styled div, we can customize backgrounds, borders, and more.
 :::
 
-
 ## Writing LaTeX Equations
 
 You can **embed LaTeX equations** in your Quarto slides using standard LaTeX syntax. For example:
@@ -139,7 +135,6 @@ $begin:math:display$ x = \\frac{-b \\pm \\sqrt{b\^2 - 4ac}}{2a} $end:math:displa
 Inline equations are written similarly: $begin:math:display$ E = mc\^2 $end:math:display$
 
 Just place the equations anywhere in your Markdown and Quarto will render them in Reveal.js.
-
 
 ## Making Presentations Self-Contained
 
@@ -154,7 +149,6 @@ format:
 ---
 ```
 
-
 ## Using Code Annotations
 
 Quarto code blocks can include **annotations** to explain specific lines or sections of code:
@@ -168,8 +162,6 @@ plot(1:10, main = "Example Plot")
 
 The `#| annotation:` field allows you to provide short descriptions or notes about the code block’s purpose.
 
-
-
 ## Enabling the Copy Button for Code Snippets
 
 In your YAML, set:
@@ -181,7 +173,6 @@ format:
 ```
 
 This enables a **copy button** on each code block, allowing you (and your audience) to quickly copy code snippets.
-
 
 ## Exploring Built-in Theme Options
 
@@ -203,7 +194,6 @@ format:
     theme: "night"
 ```
 
-
 ## Defining and Applying Custom Themes
 
 You can define a custom SCSS or CSS theme and reference it in your YAML. For example:
@@ -217,7 +207,6 @@ format:
 ```
 
 Where `custom.scss` might contain your **custom styles** to override the default theme.
-
 
 ## Using SASS Variables and CSS for Further Styling
 
@@ -242,8 +231,6 @@ $font-color: #ffffff;
 
 Then reference `custom.scss` in your Quarto YAML to apply these styles to your presentation.
 
-
-
-# 6. Q&A 
+# 6. Q&A
 
 **Thank you for joining this Quarto Workshop!**\
