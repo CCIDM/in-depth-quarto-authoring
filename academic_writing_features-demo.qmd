@@ -1,7 +1,7 @@
 ---
 title: "Academic Writing Features"
 subtitle: "Part of In-Depth Quarto Authoring Workshop"
-author: "Jae Jung"
+author: "Your Name"
 date: "February, 18, 2025"
 format: 
   html:
@@ -10,7 +10,6 @@ format:
     number-sections: true
     embed-resources: true
 editor: visual
-bibliography: references.bib
 execute: 
   warning: false
   freeze: auto
