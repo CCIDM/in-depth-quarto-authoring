@@ -2,6 +2,7 @@
 title: "Academic Writing Features"
 subtitle: "Part of In-Depth Quarto Authoring Workshop"
 author: "Jae Jung"
+date: "February, 18, 2025"
 format: 
   html:
     toc: true
