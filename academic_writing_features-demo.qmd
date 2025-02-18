@@ -6,14 +6,31 @@ date: "February, 18, 2025"
 format: 
   html:
     toc: true
-    toc-location: right-body
+    toc-location: left-body
     number-sections: true
     embed-resources: true
+    code-line-numbers: true
+    code-block-bg: true
+    code-block-border-left: "steelblue"
+    code-link: true
+    code-tools: true
+    code-fold: true
+    other-links: 
+      - text: In-depth Quarto Authoring
+        icon: share
+        href: https://github.com/CCIDM/in-depth-quarto-authoring
+      - text: DWV 101
+        icon: award
+        href: https://www.cpp.edu/cba/customer-insights-lab/curriculum/certificate/dwv/index.shtml
+      - text: MS in Digital Marketing
+        icon: bank
+        href: https://www.cpp.edu/cba/graduate-business-programs/programs/master-degree-in-digital-marketing-and-marketing-analytics.shtml
 editor: visual
 execute: 
   warning: false
   freeze: auto
   error: true
+bibliography: references.bib
 ---
 
 # Features useful for professors
