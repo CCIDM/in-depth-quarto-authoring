@@ -98,6 +98,7 @@ After taking this workshop, participants should be able to:
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ## Using Aside Blocks
 
 Quarto supports “aside” blocks which can be used to provide **additional context** or **tips** without distracting from the main content:
@@ -250,6 +251,17 @@ Then reference `custom.scss` in your Quarto YAML to apply these styles to your p
 -   Exploring Built-in Themes
 -   Defining and Applying Custom Themes via Sass
 
+=======
+## Topics to Cover:
+
+-   Self-Contained HTML
+-   Aside Blocks
+-   Writing a LaTeX Equations
+-   Creating Styled Divs and Spans
+-   Exploring Built-in Themes
+-   Defining and Applying Custom Themes via Sass
+
+>>>>>>> Stashed changes
 =======
 ## Topics to Cover:
 
