@@ -97,6 +97,7 @@ After taking this workshop, participants should be able to:
 # 5. Styling a Standard HTML Report with themes and SCSS with `Jarrod`
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ## Using Aside Blocks
 
 Quarto supports “aside” blocks which can be used to provide **additional context** or **tips** without distracting from the main content:
@@ -249,6 +250,17 @@ Then reference `custom.scss` in your Quarto YAML to apply these styles to your p
 -   Exploring Built-in Themes
 -   Defining and Applying Custom Themes via Sass
 
+=======
+## Topics to Cover:
+
+-   Self-Contained HTML
+-   Aside Blocks
+-   Writing a LaTeX Equations
+-   Creating Styled Divs and Spans
+-   Exploring Built-in Themes
+-   Defining and Applying Custom Themes via Sass
+
+>>>>>>> Stashed changes
 [Demonstration to be provided separately]{style="color:blue; font-weight:bold;"}
 
 # 6. Q&A 
