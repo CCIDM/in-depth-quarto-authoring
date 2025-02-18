@@ -1,12 +1,12 @@
 ---
-title: "Academic Writing Features"
+title: "Academic Writing Feature in Quarto"
 subtitle: "Part of In-Depth Quarto Authoring Workshop"
-author: "Your Name"
+author: "Jae Jung"
 date: "February, 18, 2025"
 format: 
   html:
     toc: true
-    toc-location: left-body
+    toc-location: right-body
     number-sections: true
     embed-resources: true
     code-line-numbers: true
@@ -14,10 +14,10 @@ format:
     code-block-border-left: "steelblue"
     code-link: true
     code-tools: true
-    code-fold: true
+    code-fold: show
     other-links: 
-      - text: In-depth Quarto Authoring
-        icon: share
+      - text: Workshop Repo
+        icon: github
         href: https://github.com/CCIDM/in-depth-quarto-authoring
       - text: DWV 101
         icon: award
@@ -72,16 +72,16 @@ You can add options to executable code like this
 
 The `echo: false` option disables the printing of code (only output is displayed).
 
-# Data Setup
+# Exploring Data
 
 ```{r}
+#| echo: fenced
 #| label: tbl-mpg
 #| tbl-cap: Data Showing mpg related data for automobilies
 #| tbl-cap-location: top
 library(tidyverse)
 library(DT)
-xmpg |> 
-  #head() |> 
+mpg |> 
   datatable()
 ```
 
@@ -91,13 +91,25 @@ xmpg |>
 @tbl-mpg shows the interesting data for car-markers. There are `r nrow(mpg)` cars in the data.
 :::
 
+## How to Complete Rendering Quarto Files in the Face of an Error
+
+```{r}
+xmpg |> 
+  datatable()
+```
+
+:::{.callout-warning}
+There is an error in the file name, `xmpg`. The correct name should be `mpg`. When you cannot fix the error, rendering will stop. If you want to complete the rendering despite an error somewhere in the quarto file, you can add `error: true` to the `YAML` header. See the yaml header under `execute`section.
+:::
+
+# Pictures and Cross-Referencing
+
 ::: {layout-ncol="2"}
 ![Graduates cellebrating](images/24ag-grad_91.jpg){#fig-graduation fig-alt="People celebrating around the graduate"}
 
 ![Belonging](images/jayvion-campbell-and-friends.jpg){#fig-belonging fig-alt="a group of students standing"}
 :::
 
-# Pictures
 
 ::::: columns
 ::: {.column width="50%"}
@@ -108,3 +120,7 @@ Some college degrees hang on a wall. Get on that also paves the way to a brighte
 Be inspired every day, inside and outside the classroom, by a diverse, supportive and creative community that will help you discover who you are and what you're capable of (@fig-belonging).
 :::
 :::::
+
+# Resources
+
+- In-depth Quarto Authoring Workshop GitHub repo: <https://github.com/CCIDM/in-depth-quarto-authoring>
